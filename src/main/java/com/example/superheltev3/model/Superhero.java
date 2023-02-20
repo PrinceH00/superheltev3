@@ -16,32 +16,10 @@ public class Superhero {
     }
 
 
-    //Getter method
+    //Get method
     public String getHeroName() {
         return heroName;
     }
-
-    public String getPrivateName() {
-        return privateName;
-    }
-
-    public double getStrength() {
-        return strength;
-    }
-
-
-    public String getSuperPower() {
-        return superPower;
-    }
-
-
-
-
-    public void addSuperPower(String superPower) {
-        this.superPower += superPower;
-    }
-
-
 
     public String toString() {
         String printSuperhero;

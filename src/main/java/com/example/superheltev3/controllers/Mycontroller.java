@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import com.example.superheltev3.services.SuperheroService;
 
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 @RequestMapping(path = "superhero")

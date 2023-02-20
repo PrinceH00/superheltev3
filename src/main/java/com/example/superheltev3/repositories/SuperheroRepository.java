@@ -41,20 +41,6 @@ public class SuperheroRepository {
         return superhero1;
     }
 
-
-
-    public String toString() {
-        if (superheroes.size() > 0) {
-            StringBuilder databaseString = new StringBuilder();
-            for (Superhero superhero : superheroes) {
-                databaseString.append(superhero.toString());
-            }
-            return ("\nList of Superheroes: \n-----------------\n" + databaseString);
-        } else {
-            return "The database is empty.";
-        }
-    }
-
     public Superhero editHero(Superhero superhero) {
         int coutner = 0;
 
@@ -67,5 +53,17 @@ public class SuperheroRepository {
         }
 
         return null;
+    }
+
+    public String toString() {
+        if (superheroes.size() > 0) {
+            StringBuilder databaseString = new StringBuilder();
+            for (Superhero superhero : superheroes) {
+                databaseString.append(superhero.toString());
+            }
+            return ("\nList of Superheroes: \n-----------------\n" + databaseString);
+        } else {
+            return "The database is empty.";
+        }
     }
 }
